@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
       CTLTB, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,                  KC_F6, KC_F7, KC_F8, KC_F9,KC_F10,KC_F11,
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-    KC_LSFT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                  KC_NO, KC_NO,KC_COMM,KC_DOT,KC_NO,KC_F12,
+    KC_LSFT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                  KC_NO, KC_NO,KC_COMM,KC_DOT,KC_SLSH,KC_F12,
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                 KC_LGUI, LOWER,KC_SPC,   KC_ENT, RAISE,KC_RALT
                               //`--------------------'  `--------------------'
@@ -84,9 +84,9 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
 
 // WPM-responsive animation stuff here
 #define IDLE_FRAMES 5
-#define IDLE_SPEED 30 
+#define IDLE_SPEED 10
 #define TAP_FRAMES 2
-#define TAP_SPEED 40
+#define TAP_SPEED 20
 #define ANIM_FRAME_DURATION 200
 #define ANIM_SIZE 320 
 uint32_t anim_timer = 0;
